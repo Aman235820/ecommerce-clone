@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Cars & Bids</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<style type="text/css">
+	body{
+		margin-left:5%; 
+		margin-right:5%;
+	}
+	#navv{
+		position: fixed;
+		width: 90%;
+		border-bottom: 1px grey solid;
+		z-index: 2;
+	}
+	.d-flex{
+		width: 50%;
+	}
+	#sell{
+		border-style: none;
+		border-radius: 40%;
+		background-color:mediumseagreen;
+
+	}
+	.sign{
+		width: 30%;
+		background-color:	mediumseagreen;
+		color: midnightblue;
+		border:none;
+		border-radius: 5px;
+
+	}
+	.box2{
+		display: inline; 
+		position: relative;
+		top:120px;
+	}
+	.lk{
+		line-height: 50px;
+		margin-left: 80px;
+		float: left;
+		text-decoration: none;
+	}
+	.q{
+		text-decoration: none;
+		color: black;
+		margin: 10px;
+	}
+	.q:hover{
+		border-bottom: 3px double black;
+		color: black;
+
+	}
+	.cards{
+
+		position: absolute;
+		top: 200px;
+	}
+	.card{
+		float:left;
+		margin: 20px;
+		border-style: none;
+	}
+	.cards1{
+	 position: absolute;
+		top: 600px;
+	}
+	.name{
+		text-decoration: none;
+		color: black;
+	}
+	.name:hover{
+		text-decoration: underline;
+		color: black;
+	}
+	.card-img-top:hover{
+		width:300px;
+		height:200px;
+	}
+
+</style>
+ </head> 
+ <body>
+ <nav class="navbar navbar-expand-lg navbar-light
+bg-white" id="navv"> 
+<div class="container-fluid"> <a class="navbar-brand" href="#"><img
+src="Capture.PNG"></a> 
+<button class="navbar-toggler" type="button"
+data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+aria-controls="navbarSupportedContent" aria-expanded="false"
+aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+</button> 
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
+	<li class="nav-item"> 
+		<div class="btn-group">
+  <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Auctions
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link" href="#" id="sell">Sell a Car</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">What's Cars and Bids</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Daily Email</a>
+        </li>
+        
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search for cars (ex.BMW,Audi,Ford)" aria-label="Search" style="background-color:gainsboro">
+        <button class="sign" type="submit">Sign Up</button>
+      </form>
+      <hr>
+    </div>
+  </div>
+
+  <br>
+</nav>
+<nav class="box2">
+<div class="btn-group">
+ <h1 style="margin-right: 10px;">Auctions</h1>
+ <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="border: 2px solid grey; border-radius: 7px; height: 50px; margin: 6px;">
+    Years
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">2013</a></li>
+    <li><a class="dropdown-item" href="#">2014</a></li>
+    <li><a class="dropdown-item" href="#">2015</a></li>
+    <li><a class="dropdown-item" href="#">2016</a></li>
+    <li><a class="dropdown-item" href="#">2017</a></li>
+    <li><a class="dropdown-item" href="#">2018</a></li>
+    <li><a class="dropdown-item" href="#">2019</a></li>
+    <li><a class="dropdown-item" href="#">2010</a></li>
+    <li><a class="dropdown-item" href="#">2021</a></li>
+    
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="border: 2px solid grey; border-radius: 7px; height: 50px; margin: 6px;">
+    Tranmission
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Automatic</a></li>
+    <li><a class="dropdown-item" href="#">Manual</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">All</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="border: 2px solid grey; border-radius: 7px; height: 50px; margin: 6px;">
+    Body Style
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Coupe</a></li>
+    <li><a class="dropdown-item" href="#">Convertible</a></li>
+    <li><a class="dropdown-item" href="#">Hatchback</a></li>
+    <li><a class="dropdown-item" href="#">Sedan</a></li>
+    <li><a class="dropdown-item" href="#">SUV/Crossover</a></li>
+    <li><a class="dropdown-item" href="#">Truck</a></li>
+    <li><a class="dropdown-item" href="#">Van</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">All</a></li>
+  </ul>
+  <div class="lk">
+  <a class="q" href="#">Ending soon</a>
+  <a class="q" href="#" >Newly listed</a>
+  <a class="q" href="#">No reserve</a>
+  <a class="q" href="#">Lowest mileage</a>
+  <a class="q" href="#">Closest to me</a>
+</div>
+</div>
+</nav>
+<br><br>
+<br>
+<div class="cards">
+	<div class="card" style="width: 18rem;">
+  <img src="1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><a  class="name" href="#">2001 BMW M3 Coupe</a></h5>
+    <p class="card-text">6-Speed Manual, Numerous Modifications Including Turbo Kit</p>
+   </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><a  class="name" href="#">2010 Buick Lucerne Super</a></h5>
+    <p class="card-text"> Ultra-Rare Buick with Northstar V8 Power, Arizona-Owned Since New</p>
+    
+  </div>
+</div>
+  <div class="card" style="width: 18rem;">
+  <img src="3.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><a  class="name" href="#">2011 Mercedes-Benz E350 4Matic Wagon</a></h5>
+    <p class="card-text">AWD Wagon, Third-Row Seating, Numerous Service Records</p>
+   
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="4.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><a  class="name" href="#">2018 GMC Sierra 3500HD Denali Crew Cab 4x4</a></h5>
+    <p class="card-text">~13,500 Miles, 1 Owner, Duramax 6.6-liter Diesel V8, Numerous Modifications</p>
+    
+  </div>
+</div>
+</div>
+<div class="cards1">
+<div class="card" style="width: 18rem;">
+  <img src="5.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><a  class="name" href="#">2010 Buick Lucerne Super</a></h5>
+    <p class="card-text"> Ultra-Rare Buick with Northstar V8 Power, Arizona-Owned Since New</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="6.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><a  class="name" href="#">2011 BMW 335d</a></h5>
+    <p class="card-text">1 Owner, Turbodiesel, Some Modifications</p>
+    
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="7.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><a  class="name" href="#">2011 Acura TSX Sport Wagon</a></h5>
+    <p class="card-text"> 2 Owners, Largely Unmodified, Accident-Free History Report</p>
+ 
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="8.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><a  class="name" href="#">1998 Fiat Barchetta</a></h5>
+    <p class="card-text"> 5-Speed Manual, Titled in Canada, Some Modifications</p>
+    
+  </div>
+</div>
+</div>
+
+
+</body>
+</html>
